@@ -1,6 +1,6 @@
 part of bcs_test;
 
-void runStarcoinTests() {
+void runDijetsTests() {
   test('AccountAddress', () {
     AccountAddress accountAddress = new AccountAddress(List<int>.filled(16, 1));
     var expect_result = Uint8List.fromList([
