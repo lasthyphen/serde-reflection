@@ -122,7 +122,7 @@ import 'package:{0}/serde/serde.dart';"#,
         writeln!(
             &mut out,
             r#"part 'src/serde_test.dart';
-part 'src/starcoin_test.dart';"#
+part 'src/dijets_test.dart';"#
         )?;
         for encoding in &self.config.encodings {
             writeln!(&mut out, "part 'src/{}_test.dart';", encoding.name())?;
@@ -132,7 +132,7 @@ part 'src/starcoin_test.dart';"#
             &mut out,
             r#"void main() {{
   group('Serde', runSerdeTests);
-  group('starcoin', runStarcoinTests);"#,
+  group('dijets', runDijetsTests);"#,
         )?;
         for encoding in &self.config.encodings {
             writeln!(
