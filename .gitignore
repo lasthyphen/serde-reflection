@@ -5,7 +5,7 @@ __pycache__
 .o
 .idea
 <<<<<<< HEAD
-serde-generate/tests/starcoin.yaml
+serde-generate/tests/dijets.yaml
 =======
 obj/
 bin/
